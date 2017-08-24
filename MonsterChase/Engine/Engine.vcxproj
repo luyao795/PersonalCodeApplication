@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile|Win32">
+      <Configuration>Profile</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile|x64">
+      <Configuration>Profile</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{30E3A3EB-3012-48C8-967F-7035F838FA45}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Engine</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Profile|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir).intermediates\$(PlatformTarget)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">
+    <OutDir>$(SolutionDir)$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir).intermediates\$(PlatformTarget)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir).intermediates\$(PlatformTarget)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir).intermediates\$(PlatformTarget)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir).intermediates\$(PlatformTarget)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">
+    <OutDir>$(SolutionDir)$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir).intermediates\$(PlatformTarget)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)Engine\Math\Source;$(SolutionDir)Engine\Math\Source\Private;$(SolutionDir)Engine\Memory\Source;$(SolutionDir)Engine\Memory\Source\Private;$(SolutionDir)Engine\Object\Source;$(SolutionDir)Engine\Object\Source\Private;$(SolutionDir)Engine\Handler\Source;$(SolutionDir)Engine\Handler\Source\Private;$(SolutionDir)Externals\GLib;$(SolutionDir)Engine\Physics\Source\Private;$(SolutionDir)Engine\Physics\Source;$(SolutionDir)Engine\Input\Source\Private;$(SolutionDir)Engine\Input\Source;$(SolutionDir)Externals\Lua;$(SolutionDir)Engine\Threading\Source\Private;$(SolutionDir)Engine\Threading\Source;$(SolutionDir)Engine\Job System\Source\Private;$(SolutionDir)Engine\Job System\Source</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)Engine\Math\Source;$(SolutionDir)Engine\Math\Source\Private;$(SolutionDir)Engine\Memory\Source;$(SolutionDir)Engine\Memory\Source\Private;$(SolutionDir)Engine\Object\Source;$(SolutionDir)Engine\Object\Source\Private;$(SolutionDir)Engine\Handler\Source;$(SolutionDir)Engine\Handler\Source\Private;$(SolutionDir)Externals\GLib;$(SolutionDir)Engine\Physics\Source\Private;$(SolutionDir)Engine\Physics\Source;$(SolutionDir)Engine\Input\Source\Private;$(SolutionDir)Engine\Input\Source;$(SolutionDir)Externals\Lua;$(SolutionDir)Engine\Threading\Source\Private;$(SolutionDir)Engine\Threading\Source;$(SolutionDir)Engine\Job System\Source\Private;$(SolutionDir)Engine\Job System\Source</AdditionalIncludeDirectories>
+      <BrowseInformation>true</BrowseInformation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)Engine\Math\Source;$(SolutionDir)Engine\Math\Source\Private;$(SolutionDir)Engine\Memory\Source;$(SolutionDir)Engine\Memory\Source\Private;$(SolutionDir)Engine\Object\Source;$(SolutionDir)Engine\Object\Source\Private;$(SolutionDir)Engine\Handler\Source;$(SolutionDir)Engine\Handler\Source\Private;$(SolutionDir)Externals\GLib;$(SolutionDir)Engine\Physics\Source\Private;$(SolutionDir)Engine\Physics\Source;$(SolutionDir)Engine\Input\Source\Private;$(SolutionDir)Engine\Input\Source;$(SolutionDir)Externals\Lua;$(SolutionDir)Engine\Threading\Source\Private;$(SolutionDir)Engine\Threading\Source;$(SolutionDir)Engine\Job System\Source\Private;$(SolutionDir)Engine\Job System\Source</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions);_PROFILE</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)Engine\Math\Source;$(SolutionDir)Engine\Math\Source\Private;$(SolutionDir)Engine\Memory\Source;$(SolutionDir)Engine\Memory\Source\Private;$(SolutionDir)Engine\Object\Source;$(SolutionDir)Engine\Object\Source\Private;$(SolutionDir)Engine\Handler\Source;$(SolutionDir)Engine\Handler\Source\Private;$(SolutionDir)Externals\GLib;$(SolutionDir)Engine\Physics\Source\Private;$(SolutionDir)Engine\Physics\Source;$(SolutionDir)Engine\Input\Source\Private;$(SolutionDir)Engine\Input\Source;$(SolutionDir)Externals\Lua;$(SolutionDir)Engine\Threading\Source\Private;$(SolutionDir)Engine\Threading\Source;$(SolutionDir)Engine\Job System\Source\Private;$(SolutionDir)Engine\Job System\Source</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)Engine\Math\Source;$(SolutionDir)Engine\Math\Source\Private;$(SolutionDir)Engine\Memory\Source;$(SolutionDir)Engine\Memory\Source\Private;$(SolutionDir)Engine\Object\Source;$(SolutionDir)Engine\Object\Source\Private;$(SolutionDir)Engine\Handler\Source;$(SolutionDir)Engine\Handler\Source\Private;$(SolutionDir)Externals\GLib;$(SolutionDir)Engine\Physics\Source\Private;$(SolutionDir)Engine\Physics\Source;$(SolutionDir)Engine\Input\Source\Private;$(SolutionDir)Engine\Input\Source;$(SolutionDir)Externals\Lua;$(SolutionDir)Engine\Threading\Source\Private;$(SolutionDir)Engine\Threading\Source;$(SolutionDir)Engine\Job System\Source\Private;$(SolutionDir)Engine\Job System\Source</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions);_PROFILE</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)Engine\Math\Source;$(SolutionDir)Engine\Math\Source\Private;$(SolutionDir)Engine\Memory\Source;$(SolutionDir)Engine\Memory\Source\Private;$(SolutionDir)Engine\Object\Source;$(SolutionDir)Engine\Object\Source\Private;$(SolutionDir)Engine\Handler\Source;$(SolutionDir)Engine\Handler\Source\Private;$(SolutionDir)Externals\GLib;$(SolutionDir)Engine\Physics\Source\Private;$(SolutionDir)Engine\Physics\Source;$(SolutionDir)Engine\Input\Source\Private;$(SolutionDir)Engine\Input\Source;$(SolutionDir)Externals\Lua;$(SolutionDir)Engine\Threading\Source\Private;$(SolutionDir)Engine\Threading\Source;$(SolutionDir)Engine\Job System\Source\Private;$(SolutionDir)Engine\Job System\Source</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Handler\Source\Private\DebugPrint.cpp" />
+    <ClCompile Include="Handler\Source\Private\Handler.cpp" />
+    <ClCompile Include="Handler\Source\Private\ValidityErrorChecker.cpp" />
+    <ClCompile Include="Input\Source\Private\Input.cpp" />
+    <ClCompile Include="Input\Source\Private\Sprite.cpp" />
+    <ClCompile Include="Input\Source\Private\SpriteLoader.cpp" />
+    <ClCompile Include="Input\Source\Private\ThreadedFileProcessor.cpp" />
+    <ClCompile Include="Job System\Source\Private\IJob.cpp" />
+    <ClCompile Include="Job System\Source\Private\JobRunner.cpp" />
+    <ClCompile Include="Job System\Source\Private\JobSystem.cpp" />
+    <ClCompile Include="Job System\Source\Private\SharedJobQueue.cpp" />
+    <ClCompile Include="Math\Source\Private\Matrix4X4.cpp" />
+    <ClCompile Include="Math\Source\Private\Point2D.cpp" />
+    <ClCompile Include="Math\Source\Private\SIMDMatrix4X4.cpp" />
+    <ClCompile Include="Math\Source\Private\SIMDVector4D.cpp" />
+    <ClCompile Include="Math\Source\Private\Timer.cpp" />
+    <ClCompile Include="Math\Source\Private\Vector3D.cpp" />
+    <ClCompile Include="Math\Source\Private\Vector4D.cpp" />
+    <ClCompile Include="Memory\Source\Private\Accumulator.cpp" />
+    <ClCompile Include="Memory\Source\Private\BitArray.cpp" />
+    <ClCompile Include="Memory\Source\Private\BlockAllocator.cpp" />
+    <ClCompile Include="Memory\Source\Private\FixedSizeAllocator.cpp" />
+    <ClCompile Include="Memory\Source\Private\FSAManager.cpp" />
+    <ClCompile Include="Memory\Source\Private\MemoryOperator.cpp" />
+    <ClCompile Include="Memory\Source\Private\ReferenceCounter.cpp" />
+    <ClCompile Include="Memory\Source\Private\StringPool.cpp" />
+    <ClCompile Include="Object\Source\Private\GameObject.cpp" />
+    <ClCompile Include="Object\Source\Private\GameObjectCreator.cpp" />
+    <ClCompile Include="Physics\Source\Private\CollisionChecker.cpp" />
+    <ClCompile Include="Physics\Source\Private\PhysicsInfo.cpp" />
+    <ClCompile Include="Threading\Source\Private\ConsolePrint.cpp" />
+    <ClCompile Include="Threading\Source\Private\Events.cpp" />
+    <ClCompile Include="Threading\Source\Private\Mutex.cpp" />
+    <ClCompile Include="Threading\Source\Private\Semaphore.cpp" />
+    <ClCompile Include="Threading\Source\Private\ShowTask.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Handler\Source\DebugPrint.h" />
+    <ClInclude Include="Handler\Source\Handler.h" />
+    <ClInclude Include="Handler\Source\MessagingSystem.h" />
+    <ClInclude Include="Handler\Source\ValidityErrorChecker.h" />
+    <ClInclude Include="Input\Source\FileProcessor.h" />
+    <ClInclude Include="Input\Source\Input.h" />
+    <ClInclude Include="Input\Source\Sprite.h" />
+    <ClInclude Include="Input\Source\SpriteLoader.h" />
+    <ClInclude Include="Input\Source\ThreadedFileProcessor.h" />
+    <ClInclude Include="Job System\Source\IJob.h" />
+    <ClInclude Include="Job System\Source\INamed.h" />
+    <ClInclude Include="Job System\Source\JobRunner.h" />
+    <ClInclude Include="Job System\Source\JobSystem.h" />
+    <ClInclude Include="Job System\Source\Private\SharedJobQueue.hpp" />
+    <ClInclude Include="Job System\Source\SharedJobQueue.h" />
+    <ClInclude Include="Math\Source\Matrix4X4.h" />
+    <ClInclude Include="Math\Source\Point2D.h" />
+    <ClInclude Include="Math\Source\Private\Matrix4X4.hpp" />
+    <ClInclude Include="Math\Source\Private\Point2D.hpp" />
+    <ClInclude Include="Math\Source\Private\Vector3D.hpp" />
+    <ClInclude Include="Math\Source\Private\Vector4D.hpp" />
+    <ClInclude Include="Math\Source\SIMDMatrix4X4.h" />
+    <ClInclude Include="Math\Source\SIMDVector4D.h" />
+    <ClInclude Include="Math\Source\Timer.h" />
+    <ClInclude Include="Math\Source\Vector3D.h" />
+    <ClInclude Include="Math\Source\Vector4D.h" />
+    <ClInclude Include="Memory\Source\Accumulator.h" />
+    <ClInclude Include="Memory\Source\BitArray.h" />
+    <ClInclude Include="Memory\Source\BlockAllocator.h" />
+    <ClInclude Include="Memory\Source\FixedSizeAllocator.h" />
+    <ClInclude Include="Memory\Source\FSAManager.h" />
+    <ClInclude Include="Memory\Source\HashedString.h" />
+    <ClInclude Include="Memory\Source\MemoryOperator.h" />
+    <ClInclude Include="Memory\Source\PooledString.h" />
+    <ClInclude Include="Memory\Source\Private\BlockAllocator.hpp" />
+    <ClInclude Include="Memory\Source\ReferenceCounter.h" />
+    <ClInclude Include="Memory\Source\SmartPointer.h" />
+    <ClInclude Include="Memory\Source\StringPool.h" />
+    <ClInclude Include="Memory\Source\WeakPointer.h" />
+    <ClInclude Include="Object\Source\GameObject.h" />
+    <ClInclude Include="Object\Source\GameObjectController.h" />
+    <ClInclude Include="Object\Source\GameObjectCreator.h" />
+    <ClInclude Include="Object\Source\Private\GameObject.hpp" />
+    <ClInclude Include="Physics\Source\CollisionChecker.h" />
+    <ClInclude Include="Physics\Source\PhysicsInfo.h" />
+    <ClInclude Include="Threading\Source\ConsolePrint.h" />
+    <ClInclude Include="Threading\Source\Events.h" />
+    <ClInclude Include="Threading\Source\Mutex.h" />
+    <ClInclude Include="Threading\Source\Semaphore.h" />
+    <ClInclude Include="Threading\Source\ShowTask.h" />
+    <ClInclude Include="Threading\Source\SingleWriterMultipleReader.h" />
+    <ClInclude Include="Threading\Source\WaitableObject.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="README.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
