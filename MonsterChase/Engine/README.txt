@@ -1,14 +1,5 @@
 README file for FinalExam
 
-
-Known issue:
-Memory leak of 31/55 bytes [WIN32/64]
-Program crashes on return with read access violation
-
-Regular BlockAllocator passed unit test. BitArray passed bit array unit test.
-BlockAllocator with FSA will crash on return with read access violation and memory leak mentioned above.
-
-
 Note: 
 Regular BlockAllocator is a singleton that will only have 1 instance alive at the same time.
 FSAManager is a singleton that will only have 1 instance alive at the same time.
